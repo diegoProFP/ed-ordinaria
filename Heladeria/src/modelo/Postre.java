@@ -28,6 +28,10 @@ public class Postre {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	@Override
+	public String toString() {
+		return "Postre [calorias=" + calorias + ", nombre=" + nombre + "]";
+	}
 	
 	
 }

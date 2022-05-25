@@ -28,6 +28,10 @@ public class Flan extends Postre{
 	public void setConCaramelo(boolean conCaramelo) {
 		this.conCaramelo = conCaramelo;
 	}
+	@Override
+	public String toString() {
+		return "Flan [deHuevo=" + deHuevo + ", conCaramelo=" + conCaramelo + "]";
+	}
 	
 	
 }

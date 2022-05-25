@@ -3,6 +3,12 @@ package modelo;
 public class BolaHelado {
 
 	private String sabor;
+	
+
+	public BolaHelado(String sabor) {
+		super();
+		this.sabor = sabor;
+	}
 
 	/**
 	 * @return the sabor
@@ -16,6 +22,11 @@ public class BolaHelado {
 	 */
 	public void setSabor(String sabor) {
 		this.sabor = sabor;
+	}
+
+	@Override
+	public String toString() {
+		return "BolaHelado [sabor=" + sabor + "]";
 	}
 	
 	

@@ -71,13 +71,12 @@ public class CajaRegistradora implements InterfazCajaRegistradora {
 		this.totalCaja += precioPostre;
 	}
 
-	private boolean encuentraBola(String sabor, BolaHelado[] bolas) {
-		BolaHelado[] bolasHelado = bolas;
+	private boolean encuentraBola(String sabor, List<BolaHelado> bolas) {
 
 		boolean saborEncontrado = false;
 
-		for (BolaHelado bolaHelado : bolasHelado) {
-			if (bolaHelado.getSabor().equalsIgnoreCase(sabor)) {
+		for (BolaHelado bolaHelado : bolas) {
+			if (bolaHelado != null && bolaHelado.getSabor().equalsIgnoreCase(sabor)) {
 				saborEncontrado = true;
 			}
 		}
